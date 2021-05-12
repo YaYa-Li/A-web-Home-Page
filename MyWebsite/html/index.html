@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>My Webpage</title>
+
+<link rel="stylesheet" type="text/css" href="../css/index.css" />
+
+	<script src="../js/less-1.3.3.min.js" type="text/javascript"></script>
+
+	
+	
+                 
+	
+	<script src="../js/jquery-1.8.2.min.js"></script>
+	 <!--图片自动切换插件-->
+	<script src="../js/L_slide.js"></script>
+	</head>
+
+
+	<body>
+		<div id="bigDiv">
+			<div id="top">
+				<div id="top1" class="wrap af1">
+					<ul class="slidebox">
+						<li><a href="#"><img src="../img/p1.jpg" /></a></li>
+						<li><a href="#"><img src="../img/p2.jpg" /></a></li>
+						<li><a href="#"><img src="../img/p3.jpg" /></a></li>
+						<li><a href="#"><img src="../img/p4.jpg" /></a></li>
+					</ul>
+				</div>
+				<div id="top2">
+					<div class="divTitle"><span><img src="../img/Group 4.png"/><font>Hello world </font><div></div><img src="../img/Shape.png"/><font>Hello world</font> </span></div>
+					<table>
+						<colgroup><col width="5%"><col width="15%"><col width="5%"><col width="20%&quot;"><col width="10%"><col width="5%"><col width="15%"><col width="5%"><col width="20%"></colgroup>						
+						<tr><td> <img src="../img/round1.png"/></td><td class="bluefont">Hello world</td> <td>8.25</td><td>Hello world</td> <td></td><td><img src="../img/round1.png"/></td><td class="bluefont">Hello world</td> <td>8.25</td><td>Hello world</td> </tr>
+						<tr><td><img src="../img/round1.png"/> </td><td class="bluefont">Hello world</td> <td>8.25</td><td>Hello world</td> <td></td> <td><img src="../img/round1.png"/></td> <td class="bluefont">Hello world</td> <td>8.25</td><td>Hello world</td> </tr>
+						<tr><td><img src="../img/round1.png"/> </td><td class="bluefont">Hello world</td> <td>8.25</td><td>Hello world</td> <td></td> <td><img src="../img/round1.png"/></td> <td class="bluefont">Hello world</td> <td>8.25</td><td>Hello world</td> </tr>
+					</table>
+					<div class="more">More</div>
+				</div>
+			</div>
+			<div id="center">
+				<div class="centerDivTitle"><img src="../img/Rectangle 7.png"/><font id="title1">Flow Map</font><font id="title2">Process System Map</font></div>
+				<div class="centerDivTitle2">
+					<table cellspacing="0">
+						<tr class="height1"><td class="yellow">Item 1</td><td colspan="4" class="blue">Item 2</td><td colspan="4" class="blue">Item 3</td><td class="yellow">Item 4</td></tr>
+						<tr class="height2"><td class="yellow">Item 5</td><td class="space"><img src="../img/arrow.png"/><div></div><img src="../img/arrow.png"/></td><td class="blue2">Item 6<br/></td><td class="blue3">Item 7</td><td class="blue4">Item 8</td><td class="blue5">Item 9</td><td class="blue6">Item 10</td><td class="blue7">Item 11</td><td class="space"><img src="../img/arrow.png"/><div></div><img src="../img/arrow.png"/></td><td class="yellow">Item 12</td></tr>
+						<tr class="height3"><td class="yellow">Item 13 </td><td class="blue addspace1" colspan="2">Item 14</td><td class="blue">Item 15</td><td class="blue">Item 16</td><td class="blue">Item 17</td><td class="blue">Item 18</td><td class="blue addspace2" colspan="2">Item 19</td><td class="yellow">Item 20</td></tr>
+					</table>
+				</div>
+			</div>
+			<div id="left">
+				<div class="centerDivTitle"><img src="../img/Rectangle 7.png"/><font id="title1">Hello world</font><font id="title2">Audit Items</font> <span class="more2">More</span></div> 
+				<div>
+				<table>
+					<colgroup><col width="5%"><col width="15%"><col width="15%"><col width="15%"><col width="20%"><col width="45%"></colgroup></tr>
+
+					<tr><td> <img src="../img/Oval.png"/></td><td class="bluefont">Hello world</td> <td>07.15-08.15</td><td>Hello world</td> <td>Hello world</td>
+
+					<tr><td><img src="../img/round2.png"/> </td><td class="bluefont">Hello world</td> <td>07.15-08.15</td><td>Hello world</td> <td>Hello world</td></tr>
+				</table>
+				</div>
+			</div>
+			<div id="right"><div class="centerDivTitle"><img src="../img/Rectangle 7.png"/><font id="title1">Hello world</font><font id="title2">Improvement Items</font> <span class="more2">More</span></div>
+					<div>
+				<table>
+<tr><td>sss</td></tr>
+				</table>
+				</div>
+			</div>
+
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+	$(function(){
+		//affect:1 2 3 4 （4种切换模式，可调）
+		$(".af1").slide({
+			affect:3,
+			time:3000,
+			speed:400,
+			dot_text:false,
+		});
+	})
+	</script>
+	<style>
+	
+	</style>
+</html>
