@@ -1,0 +1,201 @@
+@white:#ffffff;
+@margin1:20px 10px 0px 10px;
+@margin2:0px 10px 0px 10px;
+@ProcessMapBorder:4px #ffffff solid;
+@mainblue:#00BDFF;
+@cellWidth:80px;
+//二标题
+
+
+.reqname {
+    color: #4370D4 !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+
+.centerDivTitlecss{
+    line-height: 36px;
+    height: 36px;
+    border-bottom: 1px #dddddd solid;
+    #title1{
+        font-weight: bold;
+        margin-left: 8px;
+        color: #333;
+        }
+    #title2{
+        font-size: 12px;
+        color: #cccccc;
+    }
+    img{
+        position: relative;
+        top: 3px;
+    }
+}
+
+//靠右的more样式
+.more2css{
+    display: inline-block;
+    color: #0076FF;
+    position: relative;
+}
+
+
+
+#bigDiv{
+    width:1050px;
+    margin:10px auto;
+    font-size: 13px;
+}
+
+body{
+    background: #F2F2F2;
+}
+
+#top{
+    background:@white;
+    height: 230px;
+    display:block;   
+    margin: @margin1;
+}
+
+#top1{
+    width:550px;
+    background:red;
+    display:inline-block; 
+    height: inherit;
+    img{
+        width: 100%;height: 100%;
+    }
+}
+
+#top2{
+    width:480px;
+    background:@white;
+    display:inline-block; 
+    height: inherit;
+    position: absolute;
+    border-bottom: 1px solid #ddd;
+    .centerDivTitle{
+        .centerDivTitlecss;
+        margin: 2px 0px;
+        img{
+            margin-left: 10px;
+        }
+        span{
+            margin: 0px 0px 0px 125px;
+            color: #808080;
+            img{
+                position: relative;
+                top: 1px;
+                right: 5px;
+                width:3.5%;
+            }
+            div{
+                width: 15px;
+                display: inline-block;
+            }
+            font-size:12px;
+        }
+    }
+
+    table{
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        .bluefont{
+            color: #0076FF;
+        }
+        margin:15px 5px;
+    }
+
+}
+
+/*
+ * 中间内容的总样式
+ */
+#center,#center2{
+    background:@white;
+   // height: 380px;
+    display:block;   
+    margin: @margin2;
+   // padding-bottom: 5px;
+    .centerDivTitle{
+        .centerDivTitlecss;
+        margin: 0px 15px 15px 15px;
+        font{
+            margin: 5px;
+
+        }
+        span{
+            float: right;
+            a:link{
+                text-decoration: none;
+                color:#999;
+            }
+            
+        }
+       
+
+    }
+    .centerDivTitle2{
+        margin: 0px 15px ;
+        table{
+            width: 100%;
+            vertical-align: middle;
+            line-height: 50px;
+            td{
+                border-bottom: 1px #f2f2f2 solid;
+            }
+            div{
+                line-height: 27px;
+            }
+            .Img{
+                text-align: right;
+                vertical-align:top;
+                img{
+                    position: relative;
+                    right: 10px;
+                    top: -12px;
+                }
+            }
+            .content span{
+                font-weight: bold;
+                .blue{
+                    color: #0076FF;
+                }
+            }
+            .status span{
+                color: #008D1F;
+            }
+        }
+    }
+    
+}
+
+#center2{
+    padding-bottom: 15px;
+}
+
+
+//图片切换样式
+* {
+margin:0;
+padding:0;
+font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+font-weight: 500 ;
+}
+#top1 *{
+    border:none;
+}
+
+ul {list-style:none;}
+    
+.wrap {width:670px;height:240px;position:relative;overflow:hidden;float:left;}
+.slidebox {width:670px;position:absolute;top:0;left:0;height:240px;}
+.slidebox li {float:left;width:670px;height:240px;left:0;top:0;}
+.slidebox li img {display:block;width:670px;height:240px;}
+.dot {position:absolute;width:100%;height:25px;background:rgba(0,0,0,0.3);text-align:right;bottom:0;left:0;}
+.dot p {margin-right:10px;}
+.dot b {width:9px;height:9px;border-radius:20px;color:#333;display:inline-block;border:1px solid #5e5e5e;background:#5e5e5e;text-align:center;line-height:9px;margin:0 3px;margin-top:6px;cursor:pointer;font-weight:normal;}
+.dot .cur {background:#fff;color:#fff;border:1px solid #fff;}

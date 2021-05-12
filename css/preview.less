@@ -1,0 +1,423 @@
+
+* {
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    font-weight: 500;
+
+}
+
+#bigDiv{
+    width:100%;
+    height: 100%;
+    font-size: 13px;
+    background-color: #D8D8D8 ;
+}
+
+body{
+    background: #D8D8D8;
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height: 100%;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+html{
+    height: 100%;
+}
+
+#top{
+    height: 40px;
+    display:block;
+    position:absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 101;
+    background: -moz-linear-gradient(left,#69AEFE,#03C0F2);  //火狐
+    background: -ms-linear-gradient(top, #69AEFE,  #03C0F2);   //IE10
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#69AEFE), to(#03C0F2)); //谷歌
+    //GradientType 0垂直渐变  1水平渐变
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = #69AEFE, endColorstr = #03C0F2); //IE678  
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#69AEFE), to(#03C0F2));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #69AEFE, #03C0F2);   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #69AEFE, #03C0F2);  /*Opera 11.10+*/
+    div{
+        display: inline-block;
+        width: 10px;
+    }
+
+    table{
+        line-height: 40px;
+        color:#fff ;
+    }
+    span img {
+    position: relative;
+    right: 5px;
+    top: 1px;
+    width: 4%;
+    }
+}
+
+
+
+.maskCommondiv{
+    border-bottom: 1px solid #ddd;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 17px; 
+}
+
+
+#center{
+    background: #fff;
+    margin: 0px auto;
+    width: 1100px;
+    height: 100%;
+    #mask{
+        position: absolute;
+        width: inherit;
+        height: 100%;
+        //其他浏览器
+        opacity: 0.7;
+        //IE6-8
+        filter: alpha(opacity=70);
+        z-index: 100;
+        background: #000;
+        display: none;
+    }
+    #bar{
+        display: none;
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        z-index: 100;
+        background: #fff;
+        .other{
+            .maskCommondiv;
+            color: #333;
+            cursor: pointer;
+            &:hover{
+                background:#0093FF;
+                color: #fff;
+            }
+        }
+        .present{
+            .maskCommondiv;
+            padding-top: 40px;
+            background:url(../img/currImg.png) no-repeat 10px 62px;
+            background-size: 20px 20px;
+            color:#ccc;
+            cursor: default;
+
+          //  position: absolute;
+//          .currImg{
+//              position: absolute;
+//              background:url(../img/focus_yellow.png);
+//              display: inline-block;
+//          }
+        }
+        
+    }
+}
+
+#content{
+    background: #fff;
+    height: 100%;
+}
+
+@topmargin:20px;
+#cont1{
+padding-top: 50px;
+height: 90px;
+text-align: center;
+position: relative;
+
+#cont1Titlebutton{
+   position: absolute;
+   left: 40px; 
+   width: 170px; 
+   background: url(../img/Rectangle.png) no-repeat; 
+   background-size: 100% 100%;
+  // background-size: cover;
+  // filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Rectangle.png',  sizingMethod='scale');
+  //  -webkit-background-size: cover;  
+  //  -moz-background-size: cover;  
+  //  -o-background-size: cover;  
+  //  background-size: cover;  
+ //   filter: progid: DXImageTransform.Microsoft.AlphaImageLoader( src='../img/Rectangle.png', sizingMethod='scale');  
+  //  -ms-filter: progid: DXImageTransform.Microsoft.AlphaImageLoader( src='../img/Rectangle.png', sizingMethod='scale');  
+    
+   height: 65px;
+   top:70px;
+   line-height: 60px;
+   color: #fff;
+   cursor: pointer;
+}
+
+#cont11{
+    font-weight: 600;
+    height: 46px;
+    line-height: 60px;
+    color: #3869DB;
+    font-size: 22px;
+
+    
+}
+#cont12{
+    color: #999999;
+    font-size: 16px;
+    height: 30px;
+}
+}
+
+#cont2{
+height: 40px;
+line-height: 40px;
+background:#0093FF;
+margin-left: 50px;
+margin-right: 50px;
+.remark{
+    margin-left: 20px;
+    color:#fff;
+}
+
+.switch{
+//  margin-left: 50px;
+    width:780px;
+    display: inline-block;
+ 
+}
+
+        
+
+
+.search{
+    display: inline-block; 
+    height: 30px;
+    line-height: 30px;
+    .span1{
+        border: 1px solid #ddd;
+        display: inline-block; 
+        height: 21px; 
+        position: relative;
+        top: 4px;
+        background: #fff;
+        input{
+            border:none;
+            color: #ddd;
+            font-size: 13px;
+            position: relative;
+            top: -4px;
+        }
+    }
+    .span2{
+        height: 21px; 
+        display: inline-block; 
+        border: 1px solid #ddd; 
+        width: 21px; 
+        margin-left: -6px; 
+        background:#fff;
+        position: relative;
+        top: 4px;
+        input{
+            height: 65%;
+            left: 3px;
+            position: relative;
+            top: -2px;
+        }
+    }
+
+
+
+    
+
+}
+
+
+/*
+ * 下拉框样式
+ */
+.selectItem{
+    background: #fff; 
+    text-align: center;
+    position: absolute;
+    margin-top: -4px;
+    cursor:pointer;
+    div{
+        height: 25px;
+        line-height: 25px;
+        &:hover{
+            border: 1px #666 solid;
+        }
+    }
+    .blueback{
+        background:#3869DB;
+        color: #fff;
+    }
+}
+/*
+ * 下拉按钮样式
+ */
+.selectImg(){
+    width: 20px;
+    position: relative;
+    cursor:pointer;
+    
+}
+/*
+* 下拉上div样式
+*/
+.selectUpDiv{
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 100px;
+    span{
+        position:relative;
+        top:-5px;
+        color:#fff;
+    }
+}
+.cb-0,.cb-1{
+    .selectUpDiv;
+    img{
+        .selectImg;
+    }
+}
+.cb-0{
+    margin-left: 30px;
+}
+.cb-2{
+    .selectUpDiv; 
+    #select2{
+        .selectItem;
+        width: 90px;
+    }
+    img{
+        .selectImg;
+        left:14px;
+    }
+    span{
+        right: -6px;
+    }
+}
+
+
+.cb-3{
+    .selectUpDiv; 
+    left: 370px;
+    img{
+        .selectImg;
+    }
+
+    #select{
+        .selectItem;
+        width: 70px; 
+        right: 50px;
+
+
+    }
+}
+//.selected{
+//  background: #0093FF;
+//}
+}
+/*
+ * 概览表里各种div和td的宽度设置（抽出）
+ */
+.varietyWidth{
+        div{
+            display:inline-block;
+            width: 210px;
+        }
+        .record{
+            width: 100px;
+        }
+        .firstCol {
+            div{
+             width: 80px;
+            }
+        }
+        .wrap{
+            width:850px;
+            
+        }
+    }
+    
+    
+#cont3{
+background: #fff; 
+ 
+    #preview{
+        width:1000px ;
+        margin: 15px auto;
+        padding-bottom: 25px;
+        line-height: 35px;
+        td{
+            text-align: center;
+        }
+        .thead{
+           // background: #ddd;
+            height: 40px;
+           
+            td{
+               border-bottom: 1px solid #DDD;
+
+            }
+        }
+        tbody {
+            tr:nth-of-type(odd){
+                background: #f7f7f7;
+            }
+
+            .img1{
+                width:50px;
+                background:url(../img/focus_gray.png) no-repeat 10px 2px;
+                cursor: pointer;
+            }
+            .img2{
+                width:50px;
+                background:url(../img/4.png) no-repeat 20px 12px;
+            }
+            .imgcss{
+                background:url(../img/focus_yellow.png) no-repeat 10px 2px;
+            }              
+
+        }
+
+       
+    } 
+
+    #abstract{
+       width:1000px ;
+        margin: 15px auto;
+        padding-bottom: 25px;
+    //    border: 1px solid #333; 
+        line-height: 100px;
+        td{
+            border-bottom: 1px solid #D8D8D8;
+            .Maincontent{
+                padding: 7px 0px;
+                 line-height: 25px;
+                 color:#333333;
+            }
+           // .remark
+        }
+        .img1{
+            width:50px;
+            background:url(../img/focus_gray.png) no-repeat 10px 35px;
+            cursor: pointer;
+        }
+        .img2{
+            width:50px;
+            background:url(../img/4.png) no-repeat 20px 45px;
+        }
+        .imgcss{
+            background:url(../img/focus_yellow.png) no-repeat 10px 35px;
+        }            
+    }
+    #pageBar{
+        text-align:center;
+    }
+
+}
