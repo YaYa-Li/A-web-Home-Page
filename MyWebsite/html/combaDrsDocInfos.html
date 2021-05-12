@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.8.2.min.js" ></script>
+		<script type="text/javascript" src="../js/combaSamCommon.js" ></script>
+		<script>
+			$(function() {
+				//countCombaDrsDocInfosOnlyPath2();
+                //listCombaDrsDocInfosOnlyPath();
+                listCombaDrsDocInfos();
+			});
+		</script>
+		<script>
+			/*
+			 * 流程概览图页面
+			 */
+
+			/**
+			 * 统计所有path1为供应链的path2
+			 */
+
+			function countCombaDrsDocInfosOnlyPath2() {
+				var url = "http://172.16.0.140:8080/CombaDrsDocInfos/path1s/count";
+				console.log(url);
+				getSYN(url, function(data) {
+					console.log("countCombaDrsDocInfosOnlyPath2(returnData)-->" + JSON.stringify(data));
+				}, function(data) {
+					alert("系统出错！");
+					return;
+				});
+			}
+
+			/**
+			 * 查询path1为供应链的只显示分级流程数据
+			 */
+
+			function listCombaDrsDocInfosOnlyPath() {
+				var url = "http://172.16.0.140:8080/CombaDrsDocInfos/path1s";
+				console.log(url);
+				getSYN(url, function(data) {
+					console.log("countCombaDrsDocInfosOnlyPath2(returnData)-->" + JSON.stringify(data));
+				}, function(data) {
+					alert("系统出错！");
+					return;
+				});
+			}
+			
+			/**
+			 * 查询path1为供应链
+			 */
+
+			function listCombaDrsDocInfos() {
+				var url = "http://172.16.0.140:8080/CombaDrsDocInfos?path2=03 管理规范&search=规范&nowPage=1&records=10&sortField=createTime&sortType=desc";
+				console.log(url);
+				getSYN(url, function(data) {
+					console.log("countCombaDrsDocInfosOnlyPath2(returnData)-->" + JSON.stringify(data));
+				}, function(data) {
+					alert("系统出错！");
+					return;
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+
+</html>
